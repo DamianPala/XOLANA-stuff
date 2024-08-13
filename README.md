@@ -24,7 +24,8 @@ sudo vi /etc/systemd/system/xolana-watchtower.service
 ```
 
 and paste the content of [xolana-watchtower.service](https://github.com/DamianPala/XOLANA-stuff/blob/main/xolana-watchtower.service). 
-Replace all `<fields>`.
+Replace all `<fields>` with proper values.
+For `<user>` use your local username of the user under which you wnat to run the monitor. In most cases you will have the same user in `User` field and `ExecStart` of `systemd` unit.
 To get `bot-token` create Telegram Bot by chatting with `@BotFather`
 To get `chat-id` use this tutorial: [How to get Telegram Bot Chat ID](https://gist.github.com/nafiesl/4ad622f344cd1dc3bb1ecbe468ff9f8a)
 You can use direct chat with your bot or you can add your bot to a group. In this case adding an admin permision to this bot may be needed.
