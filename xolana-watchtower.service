@@ -7,7 +7,7 @@ Type=simple
 User=<user>
 Restart=on-failure
 RestartSec=5s
-Environment="TELEGRAM_BOT_TOKEN=<token>"
+Environment="TELEGRAM_BOT_TOKEN=<bot-token>"
 Environment="TELEGRAM_CHAT_ID=<chat-id>"
 ExecStart=/home/<user>/.local/share/solana/install/active_release/bin/solana-watchtower --url http://xolana.xen.network:8899 --validator-identity <vote-account>
 
